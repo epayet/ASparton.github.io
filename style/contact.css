@@ -1,0 +1,179 @@
+:root {
+    --contact-bg-color: #776F69;
+    --twitter-color: #00ACEE;
+    --instagram-color: #C32AA3;
+    --linkedin-color: #0E76A8;
+}
+
+#contact {
+    width: 100%;
+    padding-left: 2.1%;
+    padding-right: 2.2%;
+    height: auto;
+    margin: 0;
+    margin-top: 2%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: var(--contact-bg-color);
+}
+
+#contact>h2 {
+    width: 96%;
+    border-bottom: solid 1px var(--general-text-color);
+    text-align: center;
+}
+
+#contact>div {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contactIntro>p a:hover {
+    color: var(--logo-color);
+    transition: color 0.5s;
+}
+
+#contactIntro>p a:not(:hover) {
+    color: var(--section-title-color);
+    transition: color 0.5s;
+}
+
+#contactIntro>p {
+    margin: 0;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    text-align: center;
+}
+
+#contactIntro>p>a {
+    font-size: medium;
+    font-weight: 600;
+}
+
+#socialMedias {
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#socialMedias>a {
+    width: 10%;
+    height: auto;
+    margin: 1%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#socialMedias>a>img {
+    width: 100%;
+    height: auto;
+}
+
+#socialMedias>a>p {
+    text-align: center;
+    margin: 0;
+}
+
+#githubContact:hover {
+    color: var(--main-bg-color);
+    transition: color 0.5s;
+}
+
+#githubContact:not(:hover) {
+    color: var(--general-text-color);
+    transition: color 0.5s;
+}
+
+#twitterContact:hover {
+    color: var(--twitter-color);
+    transition: color 0.5s;
+}
+
+#twitterContact:not(:hover) {
+    color: var(--general-text-color);
+    transition: color 0.5s;
+}
+
+#instagramContact:hover {
+    color: var(--instagram-color);
+    transition: color 0.5s;
+}
+
+#instagramContact:not(:hover) {
+    color: var(--general-text-color);
+    transition: color 0.5s;
+}
+
+#linkedinContact:hover {
+    color: var(--linkedin-color);
+    transition: color 0.5s;
+}
+
+#linkedinContact:not(:hover) {
+    color: var(--general-text-color);
+    transition: color 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+
+    #contact>div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #contactIntro {
+        width: 75%;
+        height: auto;
+        margin-right: 5%;
+
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+
+    #contactIntro>p {
+        text-align: center;
+    }
+
+    #socialMedias {
+        width: 30%;
+        flex-flow: row wrap;
+        margin-top: 2%;
+    }
+
+    #socialMedias>a {
+        width: 40%;
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #contact>div {
+        flex-direction: row;
+    }
+
+    #socialMedias {
+        flex-flow: column nowrap;
+    }
+
+    #socialMedias>a {
+        width: 30%;
+    }
+}

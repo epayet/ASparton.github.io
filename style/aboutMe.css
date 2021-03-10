@@ -1,0 +1,55 @@
+:root {
+    --about-me-bg-color: #bcb8b1;
+}
+
+#aboutMe {
+    width: 100%;
+    padding-left: 2.1%;
+    padding-right: 2.2%;
+    height: auto;
+    margin: 0;
+    margin-top: 2%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--about-me-bg-color);
+}
+
+#aboutMe>h2 {
+    width: 96%;
+    border-bottom: solid 1px var(--general-text-color);
+    text-align: center;
+}
+
+#aboutMe>p {
+    width: 90%;
+    height: auto;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+    #aboutMe>div {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutMe>div>img {
+        width: 43%;
+        height: auto;
+        
+        margin-right: 2%;
+    }
+
+    #aboutMe>h2 {
+        font-size: x-large;
+    }
+}
