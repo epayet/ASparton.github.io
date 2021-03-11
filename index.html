@@ -21,7 +21,7 @@
         </div>
         <nav>
             <a href="#aboutMe"><p>About me</p></a>
-            <a href="#personalProjects"><p>Personal projects</p></a>
+            <a href="#projects"><p>Projects</p></a>
             <a href="#contact"><p>Contact</p></a>
         </nav>
     </header>
@@ -30,17 +30,24 @@
 
         <section id="aboutMe">
             <h2>About Me</h2>
-            <p>About me</p>
+            <p>I am Alexandre, a diligent IT french student based in Bordeaux and a passionate game developer in my spare time.
+               I am always searching for learning and self improvement to make unforgettable game experiences.
+               Ambitous and determinated, I left Reunion island to pursue my professional goals.
+               I enjoy getting out of my confort zone and challenging myself,
+               that's why I'm always improving my skills through personal and academic projects.
+            </p>
         </section>
 
         <section id="projects">
-            <h2>Personal projects</h2>
+            <h2>Projects</h2>
 
             <div class="project">
                 <div class="projectTitle">
                     <div>
                         <h3>Sorry Elisabeth</h3>
-                        <p>Cool project.</p>
+                        <p>In develpment since January, Sorry Elisabeth is a story based horror 2d game.
+                            You will play as Elisabeth and resolve a couple of enigmas to understand what happened
+                            and how to get out of that mysterious house in which you have woken up.</p>
                     </div>
                     <a href="https://github.com/ASparton/Sorry-Elisabeth" target="_blank" rel="noopener noreferrer">
                         <img src="resources/images/contacts/github.png" alt="GitHub">
@@ -48,9 +55,35 @@
                     </a>
                 </div>
                 <div class="projectBody">
-                    <img src="resources/images/personalProjects/godot_working.PNG" alt="Development capture">
+                    <img src="resources/images/projects/sorry_elisabeth_presentation.PNG" alt="Development capture">
                     <div>
-                        <p>What I did</p>
+                        <ul>
+                            <li>Interaction system
+                                <ul>
+                                    <li>Player can interact with several objects in the room.</li>
+                                    <li>Different interation's type (examine, open, use, combine...).</li>
+                                    <li>Player can not interact with certain objects depending on the room lighting.</li>
+                                </ul>
+                            </li>
+                            <li>Inventory system
+                                <ul>
+                                    <li>Different inventory's size depending on if the player has a handbag or not.</li>
+                                    <li>Interaction system adapted to the inventory's item.</li>
+                                </ul>
+                            </li>
+                            <li>Full point and click experience
+                                <ul>
+                                    <li>Handling different actions on the same area with only one user input.</li>
+                                </ul>
+                            </li>
+                            <li>Learning pixel art & artistic constraints
+                                <ul>
+                                    <li>Configure the engine to respect a proper pixel art style.</li>
+                                    <li>Player's animation and UI textures done trough the developement.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Tools : Godot, C++, Git, Aesprite</h4>
                         <a href="index.html">See more</a>
                     </div>
                 </div>
@@ -60,17 +93,45 @@
                 <div class="projectTitle">
                     <div>
                         <h3>Divided Soul - 12 hours Game Jam</h3>
-                        <p>Future text</p>
+                        <p>Made in a 3 person team on the theme : "Stronger Together", Divided Soul is a 2d puzzle game in co-op.
+                           You play two souls on the same keyboard which have to merge together to complete a level.
+                           2 levels were maid, and we are now looking for developing the concept.
+                        </p>
                     </div>
-                    <a href="https://github.com/ASparton/Sorry-Elisabeth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/ASparton/Divided-Soul" target="_blank" rel="noopener noreferrer">
                         <img src="resources/images/contacts/github.png" alt="GitHub">
                         <p>See on Github</p>
                     </a>
                 </div>
                 <div class="projectBody">
-                    <img src="resources/images/personalProjects/godot_working.PNG" alt="Development capture">
+                    <img src="resources/images/projects/divided_soul_presentation.PNG" alt="Development capture">
                     <div>
-                        <p>Future text.</p>
+                        <ul>
+                            <li>Adaptability
+                                <ul>
+                                      <li>Produced two playable levels in one night while completely discovering Unity and C#.</li>
+                                     <li>Include fast brainstorming and team managment.</li>
+                                </ul>
+                            </li>
+                            <li>Collision system
+                                <ul>
+                                    <li>Level objects detect wether a player is entering or exiting thier body.</li>
+                                    <li>Interact with the player's physics depending on the object's purpose.</li>
+                                </ul>
+                            </li>
+                              <li>Pressure plate system
+                                <ul>
+                                    <li>Open a linked door if the right player is on the pressure plate.</li>
+                                </ul>
+                            </li>
+                            <li>Scene transition & animation
+                                <ul>
+                                    <li>Scene fade transition implemented.</li>
+                                    <li>Player's animation designed using Aesprite and Unity's animation system.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Tools : Unity, C#, Git, Aesprite</h4>
                         <a href="index.html">See more</a>
                     </div>
                 </div>
@@ -80,7 +141,12 @@
                 <div class="projectTitle">
                     <div>
                         <h3>Retro 1010!</h3>
-                        <p>Future text</p>
+                        <p>Retro 1010! is a Tetris like inspired by the quite famouse game "1010!".
+                           You need to place pieces of diferent sizes and forms on a 10 by 10 board,
+                           and try to always have enough places to do so.
+                           You earn points when placing a piece or supressing a line by fill up an entire row or column.
+                           Finished during my free time in high school, I spent a good time developing alone all parts of the game,
+                           including the sound system and the texture design.</p>
                     </div>
                     <a href="https://github.com/ASparton/My1010" target="_blank" rel="noopener noreferrer">
                         <img src="resources/images/contacts/github.png" alt="GitHub">
@@ -88,34 +154,39 @@
                     </a>
                 </div>
                 <div class="projectBody">
-                    <img src="resources/images/personalProjects/retro1010_working.PNG" alt="Development capture">
+                    <img src="resources/images/projects/retro1010_presentation.PNG" alt="Development capture">
                     <div>
-                        <p>Future text.</p>
+                        <ul>
+                            <li>Random piece generation
+                                <ul>
+                                    <li>Developed several pieces with diferent sizes and forms.</li>
+                                    <li>Randomly choose to generate 3 pieces every round.</li>
+                                </ul>
+                            </li>
+                            <li>Handling player's action
+                                <ul>
+                                    <li>The player can choose which piece he want to place on the board with the same inputs
+                                        as the ones that handle pieces movements and settings interactions.</li>
+                                    <li>Determine wether the player has lost or not at various states of the game.</li>
+                                </ul>
+                            </li>
+                            <li>Keeps track of game's informations
+                                <ul>
+                                    <li>Save local best score and display it on every game over screen.</li>
+                                </ul>
+                            </li>
+                            <li>Sound system
+                                <ul>
+                                    <li>Sound settings integrated.</li>
+                                    <li>Player can choose to listen to the game music or not, as well to the sound effects.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Tools : Python, Pygame, Git, Aesprite, Audacity</h4>
                         <a href="index.html">See more</a>
                     </div>
                 </div>
             </div>
-
-            <div class="project">
-                <div class="projectTitle">
-                    <div>
-                        <h3>Towa</h3>
-                        <p>Future description</p>
-                    </div>
-                    <a href="https://github.com/ASparton/My1010" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/images/contacts/github.png" alt="GitHub">
-                        <p>See on Github</p>
-                    </a>
-                </div>
-                <div class="projectBody">
-                    <img src="resources/images/personalProjects/retro1010_working.PNG" alt="Development capture">
-                    <div>
-                        <p>Future text.</p>
-                        <a href="index.html">See more</a>
-                    </div>
-                </div>
-            </div>
-
 
         </section>
 

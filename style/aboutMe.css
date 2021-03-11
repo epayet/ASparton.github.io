@@ -1,5 +1,5 @@
 :root {
-    --about-me-bg-color: #bcb8b1;
+    --about-me-bg-color: #f2cc8f;
 }
 
 #aboutMe {
@@ -31,23 +31,17 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
+
+    font-size: 1.2em;
 }
 
-@media screen and (max-width: 1024px) {
-    #aboutMe>div {
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
+@media screen and (max-width: 800px) {
+    #aboutMe>p {
+        font-size: 1em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #aboutMe>div>img {
-        width: 43%;
-        height: auto;
-        
-        margin-right: 2%;
-    }
 
     #aboutMe>h2 {
         font-size: x-large;

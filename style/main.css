@@ -11,9 +11,9 @@
 }
 
 :root {
-    --main-bg-color: #f4f3ee;
+    --main-bg-color: #e7ecef;
     --header-color: #333533;
-    --footer-color: #333533;
+    --footer-color: #212529;
     --general-text-color: #242423;
     --header-text-color: #adb5bd;
     --logo-color: #F3BB68;
@@ -27,7 +27,7 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, h4, h5, p, a, ul, li {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
 }
