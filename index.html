@@ -20,19 +20,19 @@
             </a>
         </div>
         <nav>
-            <a href="#aboutMe"><p>About me</p></a>
-            <a href="#projects"><p>Projects</p></a>
+            <a href="#goToAboutMe"><p>About me</p></a>
+            <a href="#goToProjects"><p>Projects</p></a>
             <a href="#contact"><p>Contact</p></a>
         </nav>
     </header>
 
-    <main>
+    <main id="goToAboutMe">
 
         <section id="aboutMe">
             <h2>About Me</h2>
-            <p>I am Alexandre, a diligent IT french student based in Bordeaux and a passionate game developer in my spare time.
+            <p id="goToProjects">I am Alexandre, a diligent IT french student based in Bordeaux and a passionate game developer in my spare time.
                I am always searching for learning and self improvement to make unforgettable game experiences.
-               Ambitous and determinated, I left Reunion island to pursue my professional goals.
+               Ambitious and determinated, I left Reunion island to pursue my professional goals.
                I enjoy getting out of my confort zone and challenging myself,
                that's why I'm always improving my skills through personal and academic projects.
             </p>
@@ -46,8 +46,8 @@
                     <div>
                         <h3>Sorry Elisabeth</h3>
                         <p>In develpment since January, Sorry Elisabeth is a story based horror 2d game.
-                            You will play as Elisabeth and resolve a couple of enigmas to understand what happened
-                            and how to get out of that mysterious house in which you have woken up.</p>
+                            You will play as Elisabeth, a british young girl and resolve enigmas to understand what happened
+                            and how to get out of this mysterious house in which you have woken up.</p>
                     </div>
                     <a href="https://github.com/ASparton/Sorry-Elisabeth" target="_blank" rel="noopener noreferrer">
                         <img src="resources/images/contacts/github.png" alt="GitHub">
@@ -61,25 +61,25 @@
                             <li><p>Interaction system</p>
                                 <ul>
                                     <li>Player can interact with several objects in the room.</li>
-                                    <li>Different interation's type (examine, open, use, combine...).</li>
-                                    <li>Player can not interact with certain objects depending on the room lighting.</li>
+                                    <li>Diferent interation's type (examine, open, use, combine...).</li>
+                                    <li>Player can't interact with certain objects depending on the room state (lighting...).</li>
                                 </ul>
                             </li>
                             <li><p>Inventory system</p>
                                 <ul>
-                                    <li>Different inventory's size depending on if the player has a handbag or not.</li>
+                                    <li>Diferent inventory's size depending on if the player has a handbag or not.</li>
                                     <li>Interaction system adapted to the inventory's item.</li>
                                 </ul>
                             </li>
                             <li><p>Full point and click experience</p>
                                 <ul>
-                                    <li>Handling different actions on the same area with only one user input.</li>
+                                    <li>Handling diferent actions on the same area with only one user input.</li>
                                 </ul>
                             </li>
                             <li><p>Learning pixel art & artistic constraints</p>
                                 <ul>
-                                    <li>Configure the engine to respect a proper pixel art style.</li>
-                                    <li>Player's animation and UI textures done trough the developement.</li>
+                                    <li>Setting up the engine to respect a pleasant pixel art style.</li>
+                                    <li>Player's animations and UI textures done by myself trough the developement.</li>
                                 </ul>
                             </li>
                         </ul>
@@ -93,9 +93,9 @@
                 <div class="projectTitle">
                     <div>
                         <h3>Divided Soul - 12 hours Game Jam</h3>
-                        <p>Made in a 3 person team on the theme : "Stronger Together", Divided Soul is a 2d puzzle game in co-op.
+                        <p>Made in a 3 person team on the theme : "Stronger Together", Divided Soul is a 2d puzzle game in cooperation.
                            You play two souls on the same keyboard which have to merge together to complete a level.
-                           2 levels were maid, and we are now looking for developing the concept.
+                           2 levels were maid, and the team is now looking to push forward this one night idea.
                         </p>
                     </div>
                     <a href="https://github.com/ASparton/Divided-Soul" target="_blank" rel="noopener noreferrer">
@@ -109,14 +109,14 @@
                         <ul>
                             <li><p>Adaptability</p>
                                 <ul>
-                                      <li>Produced two playable levels in one night while completely discovering Unity and C#.</li>
-                                     <li>Include fast brainstorming and team managment.</li>
+                                    <li>Produced two playable levels in less than 12 hours while completely discovering Unity and C#.</li>
+                                    <li>Include brainstorming's phase and team managment.</li>
                                 </ul>
                             </li>
                             <li><p>Collision system</p>
                                 <ul>
-                                    <li>Level objects detect wether a player is entering or exiting thier body.</li>
-                                    <li>Interact with the player's physics depending on the object's purpose.</li>
+                                    <li>Certain objects in the level detect wether a player is entering or exiting thier body.</li>
+                                    <li>Interact with the player's physics depending on the object's purpose (stop if it's wall...).</li>
                                 </ul>
                             </li>
                               <li><p>Pressure plate system</p>
@@ -127,7 +127,7 @@
                             <li><p>Scene transition & animation</p>
                                 <ul>
                                     <li>Scene fade transition implemented.</li>
-                                    <li>Player's animation designed using Aesprite and Unity's animation system.</li>
+                                    <li>Player's animations designed using Aesprite and Unity's animation system.</li>
                                 </ul>
                             </li>
                         </ul>
@@ -142,9 +142,9 @@
                     <div>
                         <h3>Retro 1010!</h3>
                         <p>Retro 1010! is a Tetris like inspired by the quite famouse game "1010!".
-                           You need to place pieces of diferent sizes and forms on a 10 by 10 board,
+                           You need to place pieces of diferent sizes and shapes on a 10 by 10 board,
                            and try to always have enough places to do so.
-                           You earn points when placing a piece or supressing a line by fill up an entire row or column.
+                           You earn points when placing a piece, or supressing a line by filling up an entire row or column.
                            Finished during my free time in high school, I spent a good time developing alone all parts of the game,
                            including the sound system and the texture design.</p>
                     </div>
@@ -157,9 +157,9 @@
                     <img src="resources/images/projects/retro1010_presentation.PNG" alt="Development capture">
                     <div>
                         <ul>
-                            <li><p>Random piece generation</p>
+                            <li><p>Random pieces generation</p>
                                 <ul>
-                                    <li>Developed several pieces with diferent sizes and forms.</li>
+                                    <li>Developed several pieces with diferent sizes and shapes.</li>
                                     <li>Randomly choose to generate 3 pieces every round.</li>
                                 </ul>
                             </li>
@@ -172,13 +172,13 @@
                             </li>
                             <li><p>Keeps track of game's informations</p>
                                 <ul>
-                                    <li>Save local best score and display it on every game over screen.</li>
+                                    <li>Saves the local best score and displays it on every game over screen.</li>
                                 </ul>
                             </li>
                             <li><p>Sound system</p>
                                 <ul>
                                     <li>Sound settings integrated.</li>
-                                    <li>Player can choose to listen to the game music or not, as well to the sound effects.</li>
+                                    <li>Player can choose to listen to the game music or not, as well as to the sound effects.</li>
                                 </ul>
                             </li>
                         </ul>
@@ -208,18 +208,17 @@
                         <ul>
                             <li><p>Player's actions and consequences</p>
                                 <ul>
-                                    <li>Several player's action which have many consequences on the game.</li>
-                                    <li>Rigorous problems refactoring.</li>
+                                    <li>Tha player can choose between various diferent actions (put on the board, activate a tour...).</li>
+                                    <li>Rigorous problems refactoring (packages, classes, sub-methods...).</li>
                                 </ul>
                             </li>
-                            <li><p>Carefull unit testing work</p>
+                            <li><p>Carefull unit testing</p>
                                 <ul>
-                                    <li>Unit tests done for each actions and refactored classes methods.</li>
+                                    <li>Unit tests done for each classes methods.</li>
                                 </ul>
                             </li>
                             <li><p>Expert system IA developed in duo</p>
                                 <ul>
-                                    <li>First brainstorming phase.</li>
                                     <li>Diferent anticipations and reactions to the oponent's actions
                                         depending on if we play first or second.</li>
                                 </ul>
