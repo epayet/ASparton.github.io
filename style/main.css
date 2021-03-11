@@ -27,7 +27,7 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, p, a, ul, li {
+h1, h2, h3, h4, h5, p, a, li {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
 }
