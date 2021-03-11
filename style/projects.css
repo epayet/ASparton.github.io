@@ -152,9 +152,8 @@
     justify-content: flex-start;
 }
 
-.projectBody>div>p {
-    width: 100%;
-    height: auto;
+.projectBody>div>ul>li>p {
+    font-weight: 600;
 }
 
 .projectBody>div>a {

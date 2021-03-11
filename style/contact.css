@@ -25,6 +25,7 @@
     width: 96%;
     border-bottom: solid 1px var(--general-text-color);
     text-align: center;
+    color: var(--main-bg-color);
 }
 
 #contact>div {
@@ -37,13 +38,17 @@
     align-items: center;
 }
 
+#contactIntro>p {
+    color: var(--main-bg-color);
+}
+
 #contactIntro>p a:hover {
     color: var(--logo-color);
     transition: color 0.5s;
 }
 
 #contactIntro>p a:not(:hover) {
-    color: var(--section-title-color);
+    color: var(--main-bg-color);
     transition: color 0.5s;
 }
 
@@ -91,12 +96,12 @@
 }
 
 #githubContact:hover {
-    color: var(--main-bg-color);
+    color: var(--logo-color);
     transition: color 0.5s;
 }
 
 #githubContact:not(:hover) {
-    color: var(--general-text-color);
+    color: var(--main-bg-color);
     transition: color 0.5s;
 }
 
@@ -106,7 +111,7 @@
 }
 
 #twitterContact:not(:hover) {
-    color: var(--general-text-color);
+    color: var(--main-bg-color);
     transition: color 0.5s;
 }
 
@@ -116,7 +121,7 @@
 }
 
 #instagramContact:not(:hover) {
-    color: var(--general-text-color);
+    color: var(--main-bg-color);
     transition: color 0.5s;
 }
 
@@ -126,7 +131,7 @@
 }
 
 #linkedinContact:not(:hover) {
-    color: var(--general-text-color);
+    color: var(--main-bg-color);
     transition: color 0.5s;
 }
 
