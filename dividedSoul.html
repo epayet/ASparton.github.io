@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alexandre Sparton | Sorry Elisabeth</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/contact.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/gamePresentation.css'>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <img src="resources/images/logo.png" alt="Character logo">
+            <a href="index.html">
+                <h2>Alexandre Sparton</h2>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html#goToAboutMe"><p>About me</p></a>
+            <a href="index.html#goToProjects"><p>Projects</p></a>
+            <a href="#contact"><p>Contact</p></a>
+        </nav>
+    </header>
+
+    <main class="gamePresentation">
+        <h1>Divided Soul</h1>
+
+        <section id="description">
+            <div>
+                <h4>Project type :</h4>
+                <p>Game jam, in a 3 person team</p>
+            </div>
+            <div>
+                <h4>Game engine & Languages :</h4>
+                <p>Unity, C#</p>
+            </div>
+            <div>
+                <h4>Tools :</h4>
+                <p>Git, Aesprite</p>
+            </div>
+        </section>
+        
+        <p id="resume">
+            Divided Soul come from a 12 hours game jam whose the theme was "Stronger Together".
+            This is a 2d puzzle game in cooperation with a level's system.
+            To finish a level, the two souls that you control on the same keyboard have to merge together.
+            2 levels have been made while personaly, completely discovering Unity and C#.
+        </p>
+
+        <video controls>
+            <source src="resources/videos/divided_soul/DSGameplayPresentation.mp4">
+            Sorry, your brower does not support embedded videos.
+        </video>
+
+        <section class="elementShow">
+            <h2>Pressure plate system</h2>
+            <p>
+                In the second level, pressure plates can detect wether a player is entering or exiting their body.
+                If the player's color correspond to the pressure plate's color, then it opens or closes its linked door.
+            </p>
+            <video controls>
+                <source src="resources/videos/divided_soul/DSPressurePlateShow.mp4">
+                Sorry, your brower does not support embedded videos.
+            </video>
+            <div class="code">
+                <h3>Door & Pressure plates classes</h3>
+                <div>
+                    <a href="https://github.com/ASparton/Divided-Soul/blob/main/TogetherStronger/Assets/BluePressurePlate.cs" target="_blank" rel="noopener noreferrer">
+                        See PressurePlate class's code
+                    </a>
+                    <a href="https://github.com/ASparton/Divided-Soul/blob/main/TogetherStronger/Assets/Door.cs" target="_blank" rel="noopener noreferrer">
+                        See Door class's code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="elementShow">
+            <h2>Players merge to complete a level</h2>
+            <p>
+                The blue player detect wehter the red player is entering its body, and do the "merging" by :
+            </p>
+            <ul>
+                <li>Set the blue player's position to the red's position</li>
+                <li>Hiding the red player</li>
+                <li>Stop any movements</li>
+                <li>Replace the current blue animation by the fusion animation</li>
+            </ul>
+            <video controls>
+                <source src="resources/videos/divided_soul/DSFusionShow.mp4">
+                Sorry, your brower does not support embedded videos.
+            </video>
+            <div class="code">
+                <h3>Blue player class</h3>
+                <div>
+                    <a href="https://github.com/ASparton/Divided-Soul/blob/main/TogetherStronger/Assets/Player/PlayerBlue.cs" target="_blank" rel="noopener noreferrer">
+                        See PlayerBlue class's code
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div>
+            <div id="contactIntro">
+                <p>Feel free to contact me here: <a href="mailto:alexandre.sparton.dev@gmail.com">alexandre.sparton.dev@gmail.com</a>.</p>
+                <p>You can also do it through my social medias:</p>
+            </div>
+            <div id="socialMedias">
+                <a href="https://github.com/ASparton" target="_blank" rel="noopener noreferrer" id="githubContact">
+                    <img src="resources/images/contacts/github.png" alt="GitHub">
+                    <p>Github</p>
+                </a>
+                <a href="https://twitter.com/Beyl_dev" target="_blank" rel="noopener noreferrer" id="twitterContact">
+                    <img src="resources/images/contacts/twitter.png" alt="Twitter">
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.instagram.com/alexandresparton_dev/" target="_blank" rel="noopener noreferrer" id="instagramContact">
+                    <img src="resources/images/contacts/instagram.png" alt="Instagram">
+                    <p>Instagram</p>
+                </a>
+                <a href="https://www.linkedin.com/in/alexandre-sparton-08aa42206/" target="_blank" rel="noopener noreferrer"
+                   id="linkedinContact">
+                    <img src="resources/images/contacts/logo-linkedin.png" alt="Linkedin">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Copyright © 2021 | By Sparton Alexandre</p>
+</footer>
+
+</body>
+</html>

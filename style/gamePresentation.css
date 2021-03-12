@@ -1,0 +1,216 @@
+:root {
+    --gamePresentation-bg-color: #adb5bd;
+    --section-title-color: #242423;
+}
+
+main.gamePresentation {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--gamePresentation-bg-color);
+}
+
+main.gamePresentation>h1 {
+    width: 90%;
+    height: auto;
+
+    border-bottom: solid 2px var(--section-title-color);
+    text-align: center;
+    color: var(--section-title-color);
+}
+
+#description {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#description h4, #description p {
+    font-size: 1.1em;
+}
+
+#description>div {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#description>div>* {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 2%;
+    margin-bottom: 1.5%;
+}
+
+#description>div>h4 {
+    font-weight: 600;
+}
+
+#resume {
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+#resume>a {
+    font-size: 1.05em;
+}
+
+.gamePresentation>ul {
+    align-self: flex-start;
+    margin: 0;
+    margin-left: 10%;
+}
+
+#resume>a:hover {
+    color: var(--logo-color);
+    transition: color 0.5s;
+}
+
+#resume>a:not(:hover) {
+    color: var(--section-title-color);
+    transition: color 0.5s;
+}
+
+main.gamePresentation>video, main.gamePresentation>img {
+    width: 80%;
+    height: auto;
+
+    margin-bottom: 2%;
+}
+
+.elementShow {
+    width: 90%;
+    height: auto;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.elementShow>video {
+    width: 60%;
+    height: auto;
+
+    align-self: center;
+}
+
+.elementShow>h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+
+    border-bottom: solid 1px var(--section-title-color);
+}
+
+.code>h3 {
+    width: 25%;
+    height: auto;
+    margin-bottom: 2%;
+
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+
+    border-bottom: solid 1px var(--section-title-color);
+}
+
+.code>div {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 4%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.code>div>a:hover {
+    color: var(--logo-color);
+    transition: color 0.5s;
+}
+
+.code>div>a:not(:hover) {
+    color: var(--section-title-color);
+    transition: color 0.5s;
+}
+
+.code>div>a {
+    width: 20%;
+
+    margin: 1%;
+    padding: 0.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    
+    border: solid var(--section-title-color) 3px;
+    border-radius: 5px;
+
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+}
+
+.code>div>a:hover {
+    background-color: var(--section-title-color);
+    transition: background-color 0.5s;
+}
+
+.code>div>a:not(:hover) {
+    background-color: unset;
+    transition: background-color 0.5s;
+}
+
+.elementShow>ul {
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+#contact {
+    width: 99.85%;
+}
+
+@media screen and (max-width: 800px) {
+
+    main.gamePresentation>video {
+        width: 90%;
+    }
+
+    .code>h3 {
+        width: 40%;
+    }
+
+    .elementShow video {
+        width: 100%;
+    }
+
+    .code>div>a {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .code>h3 {
+        width: 60%;
+    }
+
+    .code>div>a {
+        width: 75%;
+    }
+}

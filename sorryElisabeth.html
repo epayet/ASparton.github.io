@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alexandre Sparton | Sorry Elisabeth</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/contact.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/gamePresentation.css'>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <img src="resources/images/logo.png" alt="Character logo">
+            <a href="index.html">
+                <h2>Alexandre Sparton</h2>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html#goToAboutMe"><p>About me</p></a>
+            <a href="index.html#goToProjects"><p>Projects</p></a>
+            <a href="#contact"><p>Contact</p></a>
+        </nav>
+    </header>
+
+    <main class="gamePresentation">
+        <h1>Sorry Elisabeth</h1>
+
+        <section id="description">
+            <div>
+                <h4>Project type :</h4>
+                <p>Personal, solo project</p>
+            </div>
+            <div>
+                <h4>Game engine & Languages :</h4>
+                <p>Godot, C++</p>
+            </div>
+            <div>
+                <h4>Tools :</h4>
+                <p>Git, Aesprite</p>
+            </div>
+        </section>
+        
+        <p id="resume">
+            You will wake up as Elisabeth in a mysterious house whose you don't know anything.
+            You quickly understand that you and your mother have been kidnapped.
+            You'll need to interact with the environment to understand why all this happened, and find a way to get out of this house with your mom.
+        </p>
+
+        <video controls>
+            <source src="resources/videos/sorry_elisabeth/SEGameplayPresentation.mp4">
+            Sorry, your brower does not support embedded videos.
+        </video>
+
+        <section class="elementShow">
+            <h2>Interaction system</h2>
+            <p>
+                The player can interact with some objects in the room.
+                Those specific objects detect if the player is close enough to be able to interact with them.
+                The interactive objects contain a list of specific interactions like "Examine", "Read" or "Take"
+                that are children of the abstract class "Interaction" (contains the abstract method "play").
+            </p>
+            <video controls>
+                <source src="resources/videos/sorry_elisabeth/SEInteractionSystem.mp4">
+                Sorry, your brower does not support embedded videos.
+            </video>
+            <div class="code">
+                <h3>Interaction classes</h3>
+                <div>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Interaction.h" target="_blank" rel="noopener noreferrer">
+                        See Interaction class header's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Interaction.cpp" target="_blank" rel="noopener noreferrer">
+                        See Interaction class source's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/ExamineInteraction.h" target="_blank" rel="noopener noreferrer">
+                        See Examine class header's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/ExamineInteraction.cpp" target="_blank" rel="noopener noreferrer">
+                        See Examine class source's code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="elementShow">
+            <h2>Inventory system</h2>
+            <p>
+                The player has an inventory that contains cells, and a cell can contain an item which inherits from an interactive object class.
+                The player can interact with items directly in the inventory as well.
+                Items can have specific interactions like "combine" or "use".
+            </p>
+            <video controls>
+                <source src="resources/videos/sorry_elisabeth/SEInventoryDemonstration.mp4">
+                Sorry, your brower does not support embedded videos.
+            </video>
+            <div class="code">
+                <h3>Inventory classes</h3>
+                <div>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Inventory.h" target="_blank" rel="noopener noreferrer">
+                        See Inventory class header's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Inventory.cpp" target="_blank" rel="noopener noreferrer">
+                        See Inventory class source's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Cell.h" target="_blank" rel="noopener noreferrer">
+                        See Cell class header's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Cell.cpp" target="_blank" rel="noopener noreferrer">
+                        See Cell class source's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Item.h" target="_blank" rel="noopener noreferrer">
+                        See Item class header's code
+                    </a>
+                    <a href="https://github.com/ASparton/Sorry-Elisabeth/blob/master/sorry_elisabeth_src/src/game/Item.cpp" target="_blank" rel="noopener noreferrer">
+                        See Item class source's code
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div>
+            <div id="contactIntro">
+                <p>Feel free to contact me here: <a href="mailto:alexandre.sparton.dev@gmail.com">alexandre.sparton.dev@gmail.com</a>.</p>
+                <p>You can also do it through my social medias:</p>
+            </div>
+            <div id="socialMedias">
+                <a href="https://github.com/ASparton" target="_blank" rel="noopener noreferrer" id="githubContact">
+                    <img src="resources/images/contacts/github.png" alt="GitHub">
+                    <p>Github</p>
+                </a>
+                <a href="https://twitter.com/Beyl_dev" target="_blank" rel="noopener noreferrer" id="twitterContact">
+                    <img src="resources/images/contacts/twitter.png" alt="Twitter">
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.instagram.com/alexandresparton_dev/" target="_blank" rel="noopener noreferrer" id="instagramContact">
+                    <img src="resources/images/contacts/instagram.png" alt="Instagram">
+                    <p>Instagram</p>
+                </a>
+                <a href="https://www.linkedin.com/in/alexandre-sparton-08aa42206/" target="_blank" rel="noopener noreferrer"
+                   id="linkedinContact">
+                    <img src="resources/images/contacts/logo-linkedin.png" alt="Linkedin">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Copyright © 2021 | By Sparton Alexandre</p>
+</footer>
+
+</body>
+</html>
